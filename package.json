@@ -19,7 +19,7 @@
   "repository": "https://github.com/mhzed/machine-locale",
   "author": "mhzed <mhzedd@gmail.com>",
   "license": "ISC",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@types/node": "^8.5.2",
     "@types/nodeunit": "0.0.30",
