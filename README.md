@@ -16,8 +16,8 @@ npm install machine-locale
 
 ## Example
 
-    require("machine-locale")(function(locale) {
-      console.log(uuid)
+    require("machine-locale")(function(err, locale) {
+      console.log(locale)
     })
 
 ## Caveat

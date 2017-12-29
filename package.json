@@ -1,8 +1,11 @@
 {
   "name": "machine-locale",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "get os's default locale",
   "main": "index.js",
+  "bin": {
+    "machineLocale": "bin.js"
+  },
   "keywords": [
     "get",
     "machine",
@@ -10,7 +13,22 @@
     "default",
     "local"
   ],
-  "repository" : "https://github.com/mhzed/machine-locale",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": "https://github.com/mhzed/machine-locale",
   "author": "mhzed <mhzedd@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "@types/nodeunit": "0.0.30",
+    "nodeunit": "^0.11.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "scripts": {
+    "lint": "tslint --project .",
+    "tswatch" : "tsc --watch"
+  }
 }
